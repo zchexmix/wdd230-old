@@ -1,0 +1,23 @@
+@media screen and (min-width: 500px) {
+    header {
+        background-color: grey;
+        
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: aliceblue;
+
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    nav ul {
+		flex: 1 1 100%;
+	}
+    footer {
+        background-color: grey;
+    }
+}
