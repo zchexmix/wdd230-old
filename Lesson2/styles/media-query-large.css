@@ -1,0 +1,19 @@
+@media screen and (min-width:650px) {
+    body {
+        background-color: grey;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    #cardone {
+        grid-column: 1/2;
+
+    }
+    #cardtwo {
+        grid-column: 2/3;
+    }
+    #cardthree {
+        grid-column: 1/3;
+    }
+
+}

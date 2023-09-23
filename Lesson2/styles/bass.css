@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@100&family=Varela+Round&display=swap');
+
+body {
+    background-color: lightcyan;
+}
+header {
+    background-color: beige;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;;
+}
+main {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    
+}
+.principle{
+    background-color: lightblue;
+    border-bottom: solid 3px;
+    margin-top: -2px;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+}
+div a {
+    margin: auto;
+    text-align: center;
+}
+#cardone {
+    background-color: lightyellow;
+    text-align: center;
+}
+#cardtwo {
+    background-color: lightskyblue;
+    text-align: center;
+}
+#cardthree {
+    background-color: rgb(213, 213, 213);
+    text-align: center;
+}
+p {
+    padding: 10px;
+    text-align: left;
+    font-family: Nunito, 'Courier New', Courier, monospace;
+}
+
+
+
+img {
+    width: 70%;
+}
