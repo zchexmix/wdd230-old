@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+header, main, footer {
+    max-width: 640;
+    margin: 1rem auto;
+    border: 2px solid;
+    background-color: lightblue;
+
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+}
+section {
+    padding: 2px;
+    background-color: white;
+}
