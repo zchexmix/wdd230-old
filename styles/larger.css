@@ -1,13 +1,23 @@
 @media screen and (min-width: 500px) {
     header {
-        background-color: grey;
+        background-color: #7BD4DC;
         
     }
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: aliceblue;
+        background-color: #95F6FF;
+        text-align: center;
+        justify-content: space-around;
+        margin: auto;
 
+    }
+    li {
+        text-align: center;
+        text-decoration: none;
+    }
+    ::marker {
+        color: blue;
     }
     nav {
         display: flex;
@@ -18,6 +28,6 @@
 		flex: 1 1 100%;
 	}
     footer {
-        background-color: grey;
+        background-color: #7BD4DC;
     }
 }

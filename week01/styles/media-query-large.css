@@ -6,5 +6,8 @@
     }
     main {
         grid-template-columns: 1fr 1fr;
+        background-color: skyblue;
+        margin: 0 auto;
+
     }
 }

@@ -29,7 +29,10 @@ nav a {
 nav ul {
 	list-style-type: none;
 }
-
+nav a:hover {
+    background-color: white;
+    color: crimson;
+}
 
 #topimg {
     display: block;
@@ -46,8 +49,15 @@ main {
     text-align: center;
     background-color: lightgray;
     font-family: Slabo, Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 800px;
+
 }
 footer {
+    
+    max-width: 800px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: center;
+    margin: auto;
     background-color: rgb(30, 131, 220);
 }
