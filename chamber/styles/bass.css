@@ -1,0 +1,42 @@
+
+
+header h1 {
+    text-align: center;
+    color: #e36414;
+    background-color: #0f4c5c;
+    margin: auto;
+    padding: 20px;
+    font-family: Nunito, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    list-style: none;
+    background-color: white;
+    color: #5f0f40;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.navigation li a {
+    display: block;
+    color: ;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+.navigation li a:hover {
+    background-color: #0f4c5c;
+    color: #e36414;
+}
+main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+
+footer {
+    background-color: #0f4c5c;
+    color: #fb8b24;
+}
