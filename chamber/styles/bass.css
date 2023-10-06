@@ -33,8 +33,20 @@ main {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr;
-}
 
+}
+.maincard {
+    text-align: center;
+}
+#heroimgcard p {
+    grid-row: 1/2;
+    z-index: 1;
+}
+#heroimg {
+    width: 100%;
+    grid-row: 1/2;
+    z-index: -1;
+}
 
 footer {
     background-color: #0f4c5c;
