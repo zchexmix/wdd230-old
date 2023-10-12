@@ -42,9 +42,21 @@ main {
     z-index: 1;
 }
 #heroimg {
-    width: 100%;
+    max-width: 800px;
     grid-row: 1/2;
     z-index: -1;
+}
+#herolabel {
+    position: absolute;
+    font-size: 6rem;
+    color: #0f4c5c;
+    opacity: 45%;
+    text-shadow: 2px 2px 4px white;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 footer {
