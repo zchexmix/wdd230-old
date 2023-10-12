@@ -15,6 +15,15 @@ button.addEventListener('click', function() {
         li.append(deleteButton);
         list.append(li);
 
+        const listItems = Array.from(list.getElementsByTagName('li'));
+        listItems.sort((a, b) => a.textContent.localeCompare(b.textContent));
+        list.innerHTML = '';
+
+        for (const item of listItems) {
+            list.appendChild(item);
+        }
+        
+
         deleteButton.addEventListener('click', function() {
             list.removeChild(li);
             input.focus();
