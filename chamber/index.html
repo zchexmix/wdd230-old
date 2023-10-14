@@ -16,9 +16,15 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/larger.css">
     </head>
-<body>
+<body class="darkmode" >
     <header>
         <h1>Bountiful Chamber of Commerce</h1>
+        <label class="switch">
+            <input id="dark-mode-switch" type="checkbox">
+            <span class="slider round"></span>
+            <p>Dark Mode</p>
+        </label>
+        
     </header>
     <nav>
         <ul class="navigation">
@@ -29,18 +35,39 @@
         </ul>
     </nav>
     <main>
-        <div class="maincard" id="heroimgcard">
-            <p id="herolabel" >Bountiful</p>
+        <div id="heroimgcard">
+            <div id="joinuscard" >
+                <p id="herolabel" >Join Us!</p>
+            </div>    
             <img id="heroimg" src="images/eaglewoodfireworks.webp" alt="Eaglewood Fireworks">
         </div>
-        <div class="maincard" id="call">Call to Action Link</div>
-        <div class="maincard" id="currentevents">Current Events</div>
-        <div class="maincard" id="weather">Weather</div>
-        <div class="maincard" id="spotlights">Spotlights</div>
+        <div class="maincard" id="call">
+            <h2>Call to Action</h2>
+            <p>Want to hear about all our events, new local businesses, and more? Sign up below!</p>
+            <button id="joinbutton">Join Now!</button>
+        </div>
+        <div class="maincard" id="currentevents">
+            <h2>Current Events!</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="maincard" id="weather">
+            <h2>Whats the Weather?</h2>
+            <p></p>
+        </div>
+        <div class="maincard" id="spotlights">
+            <h2>Our Spotlights!</h2>
+            <p></p>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
         <p id="last-modified"></p>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

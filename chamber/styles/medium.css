@@ -12,6 +12,12 @@
     #heroimgcard {
         grid-column: 1/3;
     }
+    #herolabel {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
     footer {
         text-align: center
     };
