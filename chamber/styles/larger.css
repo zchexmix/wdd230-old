@@ -4,5 +4,6 @@
     }
     #heroimgcard {
         grid-column: 1/4;
+        margin: auto;
     }
 }
