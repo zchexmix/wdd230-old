@@ -1,6 +1,8 @@
 @media screen and (min-width: 1000px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 900px;
+        margin: auto;
     }
     #heroimgcard {
         grid-column: 1/4;

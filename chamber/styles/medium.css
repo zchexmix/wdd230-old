@@ -8,6 +8,8 @@
     }
     main {
         grid-template-columns: 1fr 1fr;
+        max-width: 700px;
+        margin: auto;
     }
     #heroimgcard {
         grid-column: 1/3;

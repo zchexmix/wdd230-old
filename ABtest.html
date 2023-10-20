@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A/B Testing Example</title>
+    <style>
+        /* Style for button variation A */
+        #testButton[data-variation="A"] {
+            background-color: red;
+            color: white;
+        }
+
+        /* Style for button variation B */
+        #testButton[data-variation="B"] {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our A/B Test</h1>
+    <p>Please click the button below to participate in our A/B test:</p>
+    <button id="testButton" data-variation="default">Click Me!</button>
+
+    <script>
+        // Randomly determine whether to show variation A or B
+        const randomValue = Math.random();
+        const variation = randomValue < 0.5 ? 'A' : 'B';
+
+        // Function to track user interactions
+        const trackUserInteraction = (variation) => {
+            console.log(`User clicked Variation ${variation} button.`);
+            // In a real A/B test, you'd send this data to your analytics platform.
+        };
+
+        // Determine which variation to display and set up the event listener
+        const button = document.querySelector('#testButton');
+        if (variation === 'A') {
+            button.textContent = 'Click Me (A)';
+            button.dataset.variation = 'A'; // Set a data attribute for variation A
+            trackUserInteraction('A');
+        } else {
+            button.textContent = 'Click Me (B)';
+            button.dataset.variation = 'B'; // Set a data attribute for variation B
+            trackUserInteraction('B');
+        }
+    </script>
+</body>
+</html>

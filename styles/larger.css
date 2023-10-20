@@ -47,6 +47,10 @@
     nav ul {
 		flex: 1 1 100%;
 	}
+    #herocontainer {
+        margin: auto;
+        max-width: 800px;
+    }
     footer {
         background-color: #7BD4DC;
     }

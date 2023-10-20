@@ -17,7 +17,7 @@ header h1 {
     background-color: white;
     color: #5f0f40;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 300px;
 }
 .navigation li a {
     display: block;
@@ -30,10 +30,9 @@ header h1 {
     color: #e36414;
 }
 main {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
-    /* max-width: 300px; */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
 
 }
 .maincard {
@@ -44,14 +43,14 @@ main {
     z-index: 1;
 }
 #heroimg {
-    max-width: 800px;
+    width: 100%;
     grid-row: 1/2;
     z-index: -1;
 }
 #herolabel {
     padding: 3px;
     border: 2px solid black;
-    width: fit-content;
+    width: max-content;
     background-color: #0f4c5c;
     display: ;
     position: absolute;
@@ -64,8 +63,10 @@ main {
     right: 80;
     text-align: center;
 }
-Jjoinuscard {
-    background-color: #0f4c5c;
+#joinuscard {
+  background-color: #0f4c5c;
+  
+    
 }
 .switch {
     position: absolute;
@@ -108,11 +109,11 @@ Jjoinuscard {
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #0f4c5c;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #0f4c5c;
   }
   
   input:checked + .slider:before {
@@ -140,7 +141,7 @@ Jjoinuscard {
   }
 
 .maincard h2 {
-    color: #2196F3;
+    color: #e36414;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     padding: 5px;
     background-color: #0f4c5c;
