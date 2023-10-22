@@ -14,11 +14,35 @@ header h1 {
     flex-direction: column;
     border: none;
     list-style: none;
-    background-color: white;
     color: #5f0f40;
+    background-color: #0f4c5c;
     margin: 0 auto;
     max-width: 300px;
 }
+nav {
+  background-color: #0f4c5c;
+}
+
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: navy;
+	color: white;
+    margin: auto;
+ 	position: middle;
+}
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "🏌️‍♂️";
+}
+
+
+
 .navigation li a {
     display: block;
     text-align: center;
@@ -29,6 +53,34 @@ header h1 {
     background-color: #0f4c5c;
     color: #e36414;
 }
+.navigation li {
+  display: none;
+}
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+.navigation ol {
+list-style-type: none;
+}
+.open li {
+display: block;
+width: 100%;
+}
+.open li a {
+display: block;
+}
+.active::before {
+content: "👉 ";
+}
+
+
+
+
+
 main {
   display: grid;
   grid-gap: 10px;
@@ -71,9 +123,12 @@ main {
 .switch {
     position: absolute;
     display: inline-block;
-    width: 45px;
+    top: 80px;
+    left: 85%;
+    width: 35px;
     height: 20px;
     margin-top: 5px;
+
   }
   
   /* Hide default HTML checkbox */
@@ -109,7 +164,7 @@ main {
   }
   
   input:checked + .slider {
-    background-color: #0f4c5c;
+    background-color: #ccc;
   }
   
   input:focus + .slider {
@@ -117,9 +172,9 @@ main {
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
   }
   
   /* Rounded sliders */
@@ -131,14 +186,19 @@ main {
     border-radius: 50%;
   }
   .switch p {
-    display: flex;
+    display: block;
+    color: white;
     font-size: 14px;
     font-family: Slabo, Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .slider.round:after {
+    color: #fb8b24;
   }
   .dark-mode {
     background-color: black;
     color: white;
   }
+
 
 .maincard h2 {
     color: #e36414;

@@ -34,8 +34,12 @@
     <main>
         <div id="herocontainer">
             <picture>
-                <img id="heroimg" src="images/BountifulTemple.jpeg"
+                <source srcset="images/bountifultemple-small.webp" media="(max-width: 500px)">
+                <source srcset="images/BountifulTemple-large.webp" media="(max-width: 900px)">
+                <img id="heroimg" src="images/BountifulTemple-large.webp" alt="Bountiful Temple">
+                
             </picture>
+            <p id="herolabel">Bountiful Utah Temple</p>
         </div>
         
 

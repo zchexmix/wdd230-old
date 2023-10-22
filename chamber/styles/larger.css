@@ -1,4 +1,11 @@
 @media screen and (min-width: 1000px) {
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        font-size: 18px;
+        max-width: 100%;
+    }
     main {
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 900px;
