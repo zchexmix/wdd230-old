@@ -1,0 +1,26 @@
+main {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: auto;
+    grid-gap: 10px;
+}
+h1 {
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+}
+div {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {  
+    from {  
+        opacity:0;  
+    }  
+ 
+    to {  
+        opacity:1;  
+    }  
+}
