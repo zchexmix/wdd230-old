@@ -109,6 +109,7 @@ main {
     border-width: 2px;
     border-style: solid;
     border-color: grey;
+    transform: translate(-50%,-50%);
 }
 
 footer {
