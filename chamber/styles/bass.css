@@ -219,3 +219,86 @@ footer {
     background-color: #0f4c5c;
     color: #fb8b24;
 }
+
+
+
+
+
+/* DISCOVER PAGE CSS */
+
+
+
+
+#discoverMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+#discoverImages {
+  align-items: center;
+  margin: auto;
+}
+#discoverImages img {
+  padding-bottom: 40px;
+  max-width: 300px;
+}
+
+#demographicDiscover, #EventDiscover {
+  font-family: Croissant+One;
+  background-color: #0f4c5c;
+  border-radius: 25px;
+  padding: 10px 50px 20px 50px;
+  max-width: 250px;
+  margin: auto;
+}
+#demographicDiscover li {
+  font-family: Slabo, Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+#demographicDiscover p {
+  font-family: Croissant+One, Arial, Helvetica, sans-serif;
+}
+#EventDiscover {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.scrolling-div {
+  text-align: center;
+  margin: auto;
+  width: 200px; /* Set your desired width */
+  height: 400px; /* Set your desired height */
+  overflow: hidden;
+  position: relative;
+}
+.scrolling-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* white-space: nowrap; */
+  position: absolute;
+  animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+}
+.scrolling-div:hover .scrolling-list {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+.scrolling-list h2 {
+  font-family: Slabo;
+}
+.scrolling-list li {
+  font-family: Croissant+One, Arial, Helvetica, sans-serif;
+  background-color: rgb(49, 151, 160);
+  padding: 20px 10px 0px 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

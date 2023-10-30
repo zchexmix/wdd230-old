@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chamber of Commerce</title>
+        <meta name="author" content="Zach Checketts">
+        <meta name="description" content="This is the Bountiful Utah Chamber of Commerce Home Page.">
+        <meta property="og:title" content="Bountiful Utah Chamber of Commerce">
+        <meta property="og:type" content="Website">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="https://zchexmix.github.io/wdd230/chamber/">
+        <link rel="icon" href="faviconchamber.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/bass.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    </head>
+<body class="darkmode" >
+    <header>
+        <h1>Bountiful Chamber of Commerce</h1>
+        <label class="switch">
+            <input id="dark-mode-switch" type="checkbox">
+            <span class="slider round"></span>
+            <p>Dark Mode</p>
+        </label>
+        
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover Page</a></li>
+            <li><a href="#">Support Local Business</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main id="discoverMain">
+        <section id="sidebar" >
+            <div id="discoverHeading">
+                <h1>Discover Bountiful Utah!</h1>
+            </div>
+            <div id="demographicDiscover">
+                <h2>Demographics of Bountiful</h2>
+                <p>(As of 2022)</p>
+                <p>AGE</p>
+                <li>Population: 44,481</li>
+                <li>Age &lt; 5: 9.0%</li>
+                <li>Age &lt; 18: 29.7%</li>
+                <li>Age &gt; 65: 14.5%</li>
+                <p>RACE</p>
+                <li>White: 90.7%</li>
+                <li>Black: .3%</li>
+                <li>Native American: .7%</li>
+                <li>Asian: 1.3%</li>
+                <li>Polynesian: .7%</li>
+                <li>2 or more races: 4.3%</li>
+                <li>Hispanic: 7%</li>
+            </div>
+            <div id="EventDiscover">
+                <h2>Discover Events and Activities!</h2>
+                <div class="scrolling-div" >
+                    <ul class="scrolling-list" >
+                        <li>Bountiful has countless hiking trails 
+                            that can be explored and even created! 
+                            Roam the beautiful surrounding mountains that
+                            surround the area!</li>
+                        <li>Bountiful is great for a nice walk along Bountiful Boulevard, you will be able to walk by the Bountiful LDS Temple, The Bountiful Cemetary, and get amazing views of the valley along the way!</li>
+                        <li>Check out Main Street for loads of activities, shopping, and great food! Blacksmith Ice cream is a must have!</li>
+                        <li>The South Davis Recreation center has every activity you could want for a day out with the family! Ice Skating, Swimming, Water slides, Basketball and raquetball, rock climbinh and a fully equiped gym with a running track! It has it all!</li>
+                        <li>The Eaglewood Fireworks show every year at Eaglewood Golf course is amazing. Every July there are food trucks, Games, a car show, and amazing live music makes for a great night out!</li>
+                        <li>Golfing here around Bountiful is great. Challenging courses and incredible views of the mountains will be fun for anyone thast loves to golf!</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section id="discoverImages" >
+            <img src="images/Bountiful1.webp" alt="Bountiful Skyline" loading="lazy">
+            <img src="images/Bountiful2.webp" alt="" loading="lazy">
+            <img src="images/Bountiful3.webp" alt="Bountiful Skyline" loading="lazy">
+            <img src="images/Bountiful4.webp" alt="Bountiful Skyline" loading="lazy">
+            <img src="images/Bountiful5.webp" alt="Bountiful Skyline" loading="lazy">
+            <img src="images/Bountiful6.webp" alt="Bountiful Skyline" loading="lazy">
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
+        <p id="last-modified"></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

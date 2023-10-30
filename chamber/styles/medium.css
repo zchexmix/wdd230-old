@@ -39,4 +39,34 @@
         text-align: center
     };
     
+
+
+
+    /* DISCOVER PAGE */
+
+
+    #discoverMain {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        
+    }
+    #sidebar {
+        margin: 0 auto;
+    }
+    #discoverHeading {
+        text-align: center;
+    }
+    #discoverSidebar {
+        grid-column: 1/2;
+    }
+    #discoverImages {
+        grid-column: 2/3;
+    }
+    #discoverImages img {
+        max-width: 500px;
+    }
+
+
 }
+
+
