@@ -10,9 +10,21 @@
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 900px;
         margin: auto;
+        
     }
     #heroimgcard {
         grid-column: 1/4;
         margin: auto;
+    }
+    #darkModeLabel {
+        position: absolute;
+        left: 90%;
+        top: 4%;
+    }
+    #discoverMain {
+        background-color: lightseagreen;
+    }
+    #discoverImages img {
+        max-width: 70%;
     }
 }

@@ -85,7 +85,7 @@ main {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr;
-
+  
 }
 .maincard {
     text-align: center;
@@ -136,6 +136,12 @@ main {
     opacity: 0;
     width: 0;
     height: 0;
+  }
+
+  #darkModeLabel {
+    position: absolute;
+    left: 85%;
+    top: 12%;
   }
   
   /* The slider */
@@ -233,34 +239,27 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
+  
 }
 #discoverImages {
   align-items: center;
   margin: auto;
 }
+
 #discoverImages img {
   padding-bottom: 40px;
-  max-width: 300px;
+  max-width: 70%;
 }
 
-#demographicDiscover, #EventDiscover {
+.eventCard {
   font-family: Croissant+One;
   background-color: #0f4c5c;
   border-radius: 25px;
   padding: 10px 50px 20px 50px;
   max-width: 250px;
-  margin: auto;
-}
-#demographicDiscover li {
+  margin: 15px 1rem;
   font-family: Slabo, Arial, Helvetica, sans-serif;
   text-align: left;
-}
-#demographicDiscover p {
-  font-family: Croissant+One, Arial, Helvetica, sans-serif;
-}
-#EventDiscover {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 .scrolling-div {
   text-align: center;

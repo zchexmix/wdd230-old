@@ -6,7 +6,7 @@
 	--border: hsla(0, 42%, 48%, 0.8);
 	--borderlight: hsla(0,0%,33%,.3);
 	--shadow: hsl(0,0%,50%);
-	--zebra: hsla(0, 1%, 68%, 0.985);
+	--zebra: hsl(0, 0%, 93%, 1);
 }
 
 tr:first-child th {

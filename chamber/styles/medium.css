@@ -37,8 +37,13 @@
     }
     footer {
         text-align: center
-    };
-    
+    }
+
+    #darkModeLabel {
+        position: absolute;
+        left: 90%;
+        top: 4%;
+    }
 
 
 
@@ -48,8 +53,11 @@
     #discoverMain {
         display: grid;
         grid-template-columns: 300px 1fr;
+        max-width: 80%;
+        background-color: lightseagreen;
         
     }
+   
     #sidebar {
         margin: 0 auto;
     }
@@ -63,7 +71,7 @@
         grid-column: 2/3;
     }
     #discoverImages img {
-        max-width: 500px;
+        max-width: 78%;
     }
 
 

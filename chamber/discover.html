@@ -19,11 +19,16 @@
 <body class="darkmode" >
     <header>
         <h1>Bountiful Chamber of Commerce</h1>
-        <label class="switch">
-            <input id="dark-mode-switch" type="checkbox">
-            <span class="slider round"></span>
-            <p>Dark Mode</p>
-        </label>
+        
+        <div>
+            <p id="darkModeLabel">Dark Mode</p>
+            <label class="switch">
+                <input id="dark-mode-switch" type="checkbox">
+                <span class="slider round"></span>
+                
+            </label>
+            
+        </div>
         
     </header>
     <nav>
@@ -38,26 +43,32 @@
     <main id="discoverMain">
         <section id="sidebar" >
             <div id="discoverHeading">
-                <h1>Discover Bountiful Utah!</h1>
+                <h2>Discover Bountiful Utah!</h2>
             </div>
-            <div id="demographicDiscover">
+            <div class="eventCard">
                 <h2>Demographics of Bountiful</h2>
                 <p>(As of 2022)</p>
                 <p>AGE</p>
-                <li>Population: 44,481</li>
-                <li>Age &lt; 5: 9.0%</li>
-                <li>Age &lt; 18: 29.7%</li>
-                <li>Age &gt; 65: 14.5%</li>
-                <p>RACE</p>
-                <li>White: 90.7%</li>
-                <li>Black: .3%</li>
-                <li>Native American: .7%</li>
-                <li>Asian: 1.3%</li>
-                <li>Polynesian: .7%</li>
-                <li>2 or more races: 4.3%</li>
-                <li>Hispanic: 7%</li>
+                <ul>
+                    <li>Population: 44,481</li>
+                    <li>Age &lt; 5: 9.0%</li>
+                    <li>Age &lt; 18: 29.7%</li>
+                    <li>Age &gt; 65: 14.5%</li>
+                </ul>
+                <div>
+                    <p>RACE</p>
+                </div>
+                <ul>
+                    <li>White: 90.7%</li>
+                    <li>Black: .3%</li>
+                    <li>Native American: .7%</li>
+                    <li>Asian: 1.3%</li>
+                    <li>Polynesian: .7%</li>
+                    <li>2 or more races: 4.3%</li>
+                    <li>Hispanic: 7%</li>
+                </ul>
             </div>
-            <div id="EventDiscover">
+            <div class="eventCard">
                 <h2>Discover Events and Activities!</h2>
                 <div class="scrolling-div" >
                     <ul class="scrolling-list" >
@@ -77,7 +88,7 @@
 
             </div>
         </section>
-        <section id="discoverImages" >
+        <div id="discoverImages" >
             <img src="images/Bountiful1.webp" alt="Bountiful Skyline" loading="lazy">
             <img src="images/Bountiful2.webp" alt="" loading="lazy">
             <img src="images/Bountiful3.webp" alt="Bountiful Skyline" loading="lazy">
@@ -85,7 +96,7 @@
             <img src="images/Bountiful5.webp" alt="Bountiful Skyline" loading="lazy">
             <img src="images/Bountiful6.webp" alt="Bountiful Skyline" loading="lazy">
 
-        </section>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
