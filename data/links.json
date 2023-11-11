@@ -1,0 +1,89 @@
+{
+    "lessons" : [
+        {
+            "lesson" : "01",
+            "links" : [
+                {
+                    "url" : "lesson01/holygrail.html",
+                    "title" : "Lesson 1 Holy Grail"
+                }
+            ]     
+        },
+        {
+            "lesson" : "02",
+            "links" : [
+                {
+                    "url" : "lesson02/design.html",
+                    "title" : "Lesson 2 design page"
+                }
+                {
+                    "url" : "Lesson2/designprinciples.html",
+                    "title" : "Lesson 2 design principles"
+                }
+            ]     
+        },
+        {
+            "lesson" : "03",
+            "links" : [
+                {
+                    "url" : "images/W3Schools-Quiz.png",
+                    "title" : "W3Schools CSS Combinators"
+                }
+            ]     
+        },
+        {
+            "lesson" : "04",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/z_chexmix/pen/dywKpbd",
+                    "title" : "Codepen Hamburger Menu"
+                }
+            ]     
+        },
+        {
+            "lesson" : "05",
+            "links" : [
+                {
+                    "url" : "lesson05/bom.html",
+                    "title" : "Week 5 BoM App"
+                }
+            ]     
+        },
+        {
+            "lesson" : "06",
+            "links" : [
+                {
+                    "url" : "images/landscape.webp",
+                    "title" : "Week 6 Webp Conversion"
+                }
+            ]     
+        },
+        {
+            "lesson" : "07",
+            "links" : [
+                {
+                    "url" : "lesson03/lazyload.html",
+                    "title" : "Week 7 Lazy Loading"
+                }
+            ]     
+        },
+        {
+            "lesson" : "08",
+            "links" : [
+                {
+                    "url" : "lesson08/tablebuild.html",
+                    "title" : "Week 8 Table Build"
+                }
+            ]     
+        },
+        {
+            "lesson" : "09",
+            "links" : [
+                {
+                    "url" : "lesson09/prophets.html",
+                    "title" : "Week 9 Prophets JSON Page"
+                }
+            ]     
+        },
+    ]
+}
