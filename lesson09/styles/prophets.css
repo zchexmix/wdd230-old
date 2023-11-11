@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Dosis:wght@300&display=swap');
+
+
+
+header {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap: 15px;
+}
+section {
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: Cormorant Garamond, Ariel, Helvetica;
+
+}

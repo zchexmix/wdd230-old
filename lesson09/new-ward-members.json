@@ -1,0 +1,43 @@
+{
+    "family name" : "Checketts",
+    "Move in Date" : "November 11, 2023",
+    "Number people in Family" : 7,
+    "Bishopric Visit?" : true,
+    "members" : [
+        {
+          "name" : "Dan Checketts",
+          "gender" : "Male",
+          "birth-date" : "May 28 1958"
+        },
+        {
+          "name" : "Ginny Checketts",
+          "gender" : "Female",
+          "birth-date" : "December 30 1960"
+        },
+        {
+            "name" : "Chris Checketts",
+            "gender" : "male",
+            "birth-date" : "April 28 1986"
+        },
+        {
+            "name" : "Matt Checketts",
+            "gender" : "Male",
+            "birth-date" : "July 13 1988"
+        },
+        {
+            "name" : "Ryan Checketts",
+            "gender" : "Male",
+            "birth-date" : "March 2 1992"
+        },
+        {
+            "name" : "Zach Checketts",
+            "gender" : "Male",
+            "birth-date" : "February 13 1995"
+        },
+        {
+            "name" : "Tim Checketts",
+            "gender" : "Male",
+            "birth-date" : "November 30 1998"
+        }
+    ]
+}

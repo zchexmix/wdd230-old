@@ -27,4 +27,14 @@
     #discoverImages img {
         max-width: 70%;
     }
+
+    /* ------ FORM ------ */
+    .memberBenefits {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    #timeStamp {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 }

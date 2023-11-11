@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chamber of Commerce</title>
+        <meta name="author" content="Zach Checketts">
+        <meta name="description" content="This is the Bountiful Utah Chamber of Commerce Home Page.">
+        <meta property="og:title" content="Bountiful Utah Chamber of Commerce">
+        <meta property="og:type" content="Website">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="https://zchexmix.github.io/wdd230/chamber/">
+        <link rel="icon" href="faviconchamber.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/bass.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    </head>
+<body class="darkmode" >
+    <header>
+        <h1>Bountiful Chamber of Commerce</h1>
+        <div>
+            <p id="darkModeLabel">Dark Mode</p>
+            <label class="switch">
+                <input id="dark-mode-switch" type="checkbox">
+                <span class="slider round"></span>
+                
+            </label>
+            
+        </div>
+        
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover Page</a></li>
+            <li><a href="#">Support Local Business</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+       <form method="get" action="thankyou.html">
+        <legend>Join Our Community!</legend>
+        <fieldset>
+            <label class="top">First Name*<input type="name" id="fname" placeholder="First Name" required></label>
+            <label class="top">Last Name*<input type="name" id="lname" placeholder="Last Name" required></label>
+            <label class="top">Position Title*<input type="text" id="title" placeholder="title" required></label>
+            <label class="top">Email*<input type="email" id="email" name="username" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="Please enter a valid Email Address" required></label>
+            <label class="top">Phone Number*<input type="number" id="number" placeholder="(+44 0012345678)" required></label>
+            <label class="top">Business or Organization<input type="text" id="business" placeholder="Business"></label>
+            <label class="top">Position Title<input type="text" id="title" placeholder="title"></label>
+            <label class="top">Business Description<input type="textarea" id="description" placeholder="Business Description"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Membership Level</legend>
+            <div>Membership Selection</div>
+            <label class="mid"><input type="radio" name="Membership" value="NP Membership"> NP Membership</label>
+            <label class="mid"><input type="radio" name="Membership" value="Bronze">  Bronze</label>
+            <label class="mid"><input type="radio" name="Membership" value="Silver">  Silver</label>
+            <label class="mid"><input type="radio" name="Membership" value="Gold">  Gold</label>
+            <label>TimeStamp</label>
+            
+        </fieldset>  
+        
+        <input type="submit" class="submitBtn" value="Join Our Community!">  
+        </form>
+        <div type="hidden" id="timeStamp" name="timeStamp"></div>
+        <div class="memberBenefits">
+            <h3>Membership Benefits</h3>
+            <ul id="benefits">
+                <li class="indBenefits">NP Membership is for non profit organizations and there is no fee; </li>
+                <li class="indBenefits">Bronze: </li>
+                <li class="indBenefits">Silver: </li>
+                <li class="indBenefits">Gold: 1</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
+        <p id="last-modified"></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

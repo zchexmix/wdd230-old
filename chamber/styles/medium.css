@@ -73,7 +73,20 @@
     #discoverImages img {
         max-width: 78%;
     }
-
+    /* ---- Form ---- */
+    form {
+        grid-column: 1/2;
+    }
+    /* form label.mid {
+        display: inline-block;
+        margin-right: 20px; 
+    } */
+    .memberBenefits {
+        grid-column: 2/4;
+    }
+    #timeStamp {
+        grid-column: 1/2;
+    }
 
 }
 

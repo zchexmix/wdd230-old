@@ -20,3 +20,17 @@ hamButton.addEventListener('click', () => {
   navigation.classList.toggle('open');
   hamButton.classList.toggle('open');
 });
+
+
+function updateTimestamp() {
+ 
+  var currentDateTime = new Date();
+  
+
+  var formattedDateTime = currentDateTime.toLocaleString();
+  
+
+  document.getElementById("timeStamp").textContent = "Timestamp: " + formattedDateTime;
+}
+
+updateTimestamp();
