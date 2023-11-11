@@ -15,7 +15,7 @@
                 {
                     "url" : "lesson02/design.html",
                     "title" : "Lesson 2 design page"
-                }
+                },
                 {
                     "url" : "Lesson2/designprinciples.html",
                     "title" : "Lesson 2 design principles"
@@ -84,6 +84,6 @@
                     "title" : "Week 9 Prophets JSON Page"
                 }
             ]     
-        },
+        }
     ]
 }
