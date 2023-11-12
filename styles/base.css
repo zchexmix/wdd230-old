@@ -111,6 +111,9 @@ main {
     border-color: grey;
     transform: translate(-50%,-50%);
 }
+#assignments li {
+    text-align: left;
+}
 
 footer {
     
