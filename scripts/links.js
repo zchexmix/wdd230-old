@@ -16,12 +16,12 @@ const displayLinks = (lessons) => {
     lessons.forEach((lesson) => {
         const listElement = document.createElement("li");
         const aElement = document.createElement("a");
-        aElement.setAttribute('href', lesson.links);
-        aElement.textContent(lesson.lesson);
+        aElement.setAttribute('href', lesson.links.url);
+        aElement.textContent = `Week ${lesson.lesson}: ${lesson.links[0].title}`;
 
 
         cards.appendChild(listElement);
-        listElement.appendChild(assignmentList);
+        listElement.appendChild(aElement);
 
 
 
