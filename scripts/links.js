@@ -16,7 +16,7 @@ const displayLinks = (lessons) => {
     lessons.forEach((lesson) => {
         const listElement = document.createElement("li");
         const aElement = document.createElement("a");
-        aElement.setAttribute('href', lesson.links.url);
+        aElement.setAttribute('href', lesson.links[0].url);
         aElement.textContent = `Week ${lesson.lesson}: ${lesson.links[0].title}`;
 
 
