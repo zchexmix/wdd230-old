@@ -30,7 +30,7 @@ function updateTimestamp() {
   var formattedDateTime = currentDateTime.toLocaleString();
   
 
-  document.getElementById("timeStamp").textContent = "Timestamp: " + formattedDateTime;
+  document.getElementById("#timeStamp").textContent = "Timestamp: " + formattedDateTime;
 }
 
 updateTimestamp();

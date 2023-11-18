@@ -12,16 +12,40 @@ async function getLinks() {
 
 }
 
-const displayLinks = (lessons) => {
-    lessons.forEach((lesson) => {
-        const listElement = document.createElement("li");
-        const aElement = document.createElement("a");
-        aElement.setAttribute('href', lesson.links[0].url);
-        aElement.textContent = `Week ${lesson.lesson}: ${lesson.links[0].title}`;
+const displayLinks = (members) => {
+    members.forEach((member) => {
+        const section = document.createElement("section");
+        const bizName = document.createElement("h3");
+        const number = document.createElement("p");
+        const address = document.createElement("p");
+        const url = document.createElement("p");
+        const membership = document.createElement("p");
+        const bizImage = document.createElement("img");
+
+        bizName.textContent = member.name;
+        number.textContent = member.number;
+        address.textContent = member.address;
+        url.textContent = member.url;
+        membership.textContent = member.membership;
+
+        section.appendChild(bizName);
+        section.appendChild(number);
+        section.appendChild(address);
+        section.appendChild(url);
+        section.appendChild(membership);
+        section.appendChild(bizImage);
+
+        bizImage.setAttribute('src', member.image);
+        bizImage.setAttribute('alt', member.name);
+        bizImage.setAttribute('loading' , 'lazy');
+        bizImage.setAttribute('width' , '200');
+        bizImage.setAttribute('height' , '100');
+
+        
 
 
-        cards.appendChild(listElement);
-        listElement.appendChild(aElement);
+        cards.appendChild(section);
+        // listElement.appendChild(aElement);
 
 
 
@@ -29,6 +53,25 @@ const displayLinks = (lessons) => {
     })
 
     
+}
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#directory");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
 }
 
 getLinks();
