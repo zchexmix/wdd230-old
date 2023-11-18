@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Slabo+27px&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Dosis:wght@300&family=Nunito:ital@1&display=swap');
 
 header h1 {
     text-align: center;
@@ -204,6 +204,9 @@ main {
     background-color: black;
     color: white;
   }
+  .dark-mode .maincard {
+    border: #fff;
+  }
 
 
 .maincard h2 {
@@ -303,7 +306,9 @@ footer {
 }
 
 /*----------- Form Design ----------*/
-
+form {
+  grid-row: 1/2;
+}
 form fieldset {
   text-align: left;
   margin: 2rem 2%;
@@ -355,8 +360,9 @@ form input.submitBtn:hover {
   background-color: green;
   border: solid 2px green;
 }
-memberBenefits {
+.memberBenefits {
   grid-column: 2/4;
+  text-align: center;
 }
 #timeStamp {
   grid-column: 1/2;

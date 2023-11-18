@@ -36,7 +36,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="discover.html">Discover Page</a></li>
             <li><a href="#">Support Local Business</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="directory.html">Contact Us</a></li>
         </ul>
     </nav>
     <main>
@@ -54,7 +54,7 @@
         <div class="maincard" id="call">
             <h2>Call to Action</h2>
             <p>Want to hear about all our events, new local businesses, and more? Sign up below!</p>
-            <button id="joinbutton">Join Now!</button>
+            <button id="joinbutton" href="join.html">Join Now!</button>
         </div>
         <div class="maincard" id="currentevents">
             <h2>Current Events!</h2>
@@ -67,9 +67,14 @@
         </div>
         <div class="maincard" id="weather">
             <h2>What's the Weather?</h2>
-            <p>Temperature: <span id="temperature">N/A</span></p>
-            <p>Wind Speed: <span id="windspeed">N/A</span></p>
-            <p>Wind Chill: <span id="windchill">N/A</span></p>
+            <p id="temperature"></p>
+            <img id="weather-icon"></img>
+            <p id="description"></p>
+            <section>
+                <p id="dayOne"></p>
+                <p id="dayTwo"></p>
+                <p id="dayThree"></p>
+            </section>
         </div>
         
         <div class="maincard" id="spotlights">
@@ -81,6 +86,7 @@
         <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
         <p id="last-modified"></p>
     </footer>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/windchill.js"></script>
 </body>
