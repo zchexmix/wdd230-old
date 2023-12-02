@@ -119,11 +119,20 @@ main {
     right: 80;
     text-align: center;
 }
+#current-events-list {
+  text-align: center;
+}
 #currentevents ul li {
   text-align: left;
   list-style: none;
-  margin: auto;
-  padding-bottom: 15px;
+  padding: 10px;
+  border: 2px solid rgb(180, 220, 235);
+  border-radius: 10px;
+  box-shadow: 4px 2px 5px grey;
+  background-color: rgb(189, 231, 248);
+  margin: 5px 0px 5px 0px;
+  font-family: Slabo, Arial, Helvetica, sans-serif;
+
 }
 #joinuscard {
   background-color: #0f4c5c;
@@ -218,6 +227,9 @@ main {
     border: #fff;
     background-color: navy;
   }
+  .dark-mode #current-events-list, .dark-mode #spotlight {
+    color: black;
+  }
   
 
 
@@ -275,6 +287,9 @@ footer {
   margin: 15px 1rem;
   font-family: Slabo, Arial, Helvetica, sans-serif;
   text-align: left;
+}
+#current-events-list {
+
 }
 .scrolling-div {
   text-align: center;
@@ -479,4 +494,21 @@ form input.submitBtn:hover {
   box-shadow: 4px 2px 5px grey;
   background-color: rgb(189, 231, 248);
   margin: 5px 0px 5px 0px;
+}
+#benefits {
+  align-items: center;
+}
+
+#benefits li {
+  text-align: center;
+  list-style: none;
+  font-family: Slabo, Arial, Helvetica, sans-serif;
+  border: 2px solid rgb(180, 220, 235);
+  border-radius: 10px;
+  box-shadow: 4px 2px 5px grey;
+  background-color: rgb(189, 231, 248);
+  margin: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  max-width: 450px;
 }
