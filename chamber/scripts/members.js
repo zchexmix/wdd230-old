@@ -2,6 +2,7 @@ const baseURL = "https://zchexmix.github.io/wdd230/";
 const linksURL = "https://zchexmix.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector("#directory");
 const myElement = document.getElement
+const spotlight = document.querySelector('#spotlight');
 
 async function getLinks() {
     const response = await fetch(linksURL);
@@ -9,8 +10,9 @@ async function getLinks() {
     console.log(data);
 
     displayLinks(data.members);
-
+    displaySpotlight(data.members);
 }
+getLinks();
 
 const displayLinks = (members) => {
     members.forEach((member) => {
@@ -74,4 +76,8 @@ function showList() {
 	display.classList.remove("grid");
 }
 
-getLinks();
+
+
+
+
+

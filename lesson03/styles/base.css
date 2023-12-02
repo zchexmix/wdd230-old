@@ -8,6 +8,22 @@ header {
     padding: 20px;
     font-family: Nunito, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+nav {
+    background-color: white;
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+}
+nav ul {
+    flex: 1 1 100%;
+}
 body {
     background-color: white;
 }

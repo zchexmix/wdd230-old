@@ -87,6 +87,9 @@
     #timeStamp {
         grid-column: 1/2;
     }
+    #spotlight {
+        grid-column: 2/3;
+      }
 
 }
 

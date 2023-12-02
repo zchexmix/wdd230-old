@@ -1,52 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-    <!-- This start file was build by Paul Cheney  -->
-    <title>HTML5 Start Site by Paul Cheney</title>
-
-    <meta name="description" content="Fill Me In">
-    <meta name="author" content="John Doe">
-
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/larger.css" rel="stylesheet">
-
-</head>
-
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chamber of Commerce</title>
+        <meta name="author" content="Zach Checketts">
+        <meta name="description" content="This is the Bountiful Utah Chamber of Commerce Home Page.">
+        <meta property="og:title" content="Bountiful Utah Chamber of Commerce">
+        <meta property="og:type" content="Website">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="https://zchexmix.github.io/wdd230/chamber/">
+        <link rel="icon" href="faviconchamber.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/bass.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    </head>
+<body class="darkmode" >
     <header>
-        <h1>Course Proposal</h1>
-        <h2>Designing Web Forms</h2>
+        <h1>Bountiful Chamber of Commerce</h1>
+        <div>
+            <p id="darkModeLabel">Dark Mode</p>
+            <label class="switch">
+                <input id="dark-mode-switch" type="checkbox">
+                <span class="slider round"></span>
+                
+            </label>
+            
+        </div>
+        
     </header>
-
-    <nav class="clearfix">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover Page</a></li>
+            <li><a href="directory.html">Support Local Business</a></li>
+            <li><a href="join.html">Contact Us</a></li>
         </ul>
     </nav>
-
-
     <main>
-        <h1>Course Proposal Application</h1>
-        <p>Thanks for applying to create a course for our online library. We will get back to you
-            within a week with a response.</p>
-
-
-
+        <h2 id="tq">Thank You!</h2>
+        <p id="tqp">We have received your submission. You should have an email from us shortly!</p>
     </main>
-
     <footer>
-        &copy; &bull; Paul Cheney &bull; 123-555-6789
+        <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
+        <p id="last-modified"></p>
     </footer>
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
-
 </html>
