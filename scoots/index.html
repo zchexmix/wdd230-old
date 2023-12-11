@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Motor Rentals</title>
+    <meta name="author" content="Zachary Checketts">
+    <meta name="description" content="This is the main home page for Scoots Motor Rentals. Here you will be able to find all you need for renting scooters, ATVs, and Jeeps!">
+    <meta property="og:title" content="Scoots Motor Rentals - Home Page">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://zchexmix.github.io/wdd230/scoots/index.html">
+    <link rel="icon" href="faviconchamber.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/bass.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div id="top-background"></div>
+            <div id="top-msg">
+                <h1 class="top-title">Scoots Motor Rentals</h1>
+                <h4 class="title-description">Lets make this the best time you've ever had in Cozumel!</h4>
+                <a href="reservations.html"><p>Click here to make your reservation!</p></a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html"><img id="logoimg"  src="Images/friendslogo.jpeg"></a>
+            <div class="menu">
+                <ul class="navList" >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals and Pricing</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+
+                </ul>
+                
+            </div>
+            <button class="burger-menu">&#9776;</button>
+        </nav>
+        
+    </header>
+
+    <main>
+        <div class="maincard">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="images/Cozumel_Beach.webp" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="images/cozumelmap.webp" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="images/Jeep Cozumel.webp" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="images/scooters in Cozumel.webp" style="width:100%">
+                    <div class="text">Caption Four</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/Scooter on beach.webp" style="width:100%">
+                    <div class="text">Caption Five</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div id="sidebar-main">
+            <h4>Heres a quick look at our stock! ⬇️</h4>
+            <ul id="scrolling-list-main">
+                <li>
+                    <div class="profDiv-main">
+                        <a href="rentals.html"><img class="sidepic" src="images/Honda_Metropolitan_scooter.webp"></a>
+                        <p>Honda Metropolitan</p>
+                        <p class="prices-main">Price starting at: $20/day</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="profDiv-main">
+                        <a href="rentals.html"><img class="sidepic" src="images/dio.webp"></a>
+                        <p>Honda Dio</p>
+                        <p class="prices-main">Price starting at: $30/day</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="profDiv-main">
+                        <a href="rentals.html"><img class="sidepic" src="images/Honda PCX150.webp"></a>
+                        <p>Honda PCX150</p>
+                        <p class="prices-main">Price starting at: $40/day</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="profDiv-main">
+                        <a href="rentals.html"><img class="sidepic" src="images/Honda ATV.webp"></a>
+                        <p>Honda Pioneer 1000</p>
+                        <p class="prices-main">Price starting at: $50/day</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="profDiv-main">
+                        <a href="rentals.html"><img class="sidepic" src="images/Jeep 4D.webp"></a>
+                        <p>Jeep Wrangler - 4D</p>
+                        <p class="prices-main">Price starting at: $70/day</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="profDiv-main">
+                        <a href="rentals.html"><img class="sidepic" src="images/Jeep 2D.webp"></a>
+                        <p>Jeep Wrangler - 2D</p>
+                        <p class="prices-main">Price starting at: $60/day</p>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+        <div>
+            <h4>Find our Locations!</h4>
+        </div>
+        <div class="card" id="weather-container">
+            <div id="">
+                <h2>Cozumel Forecast</h2>
+                <p id="temperature"></p>
+                <img id="weather-icon" src="#" alt="#">
+                <p id="description"></p>
+                <section>
+                    <p id="dayOne"></p>
+                    <p id="dayTwo"></p>
+                    <p id="dayThree"></p>
+                </section>
+            </div>
+        </div>
+        
+       
+    </main>
+    <footer></footer>
+    <script src="scripts/slideShow.js" defer></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>

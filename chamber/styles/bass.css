@@ -30,8 +30,7 @@ nav {
 	padding: 3px 7px 6px;
 	background-color: navy;
 	color: white;
-    margin: auto;
- 	position: middle;
+  margin: auto;
 }
 #menu::before {
 	content: "☰";
@@ -104,20 +103,19 @@ main {
     z-index: -1;
 }
 #herolabel {
-    padding: 3px;
-    border: 2px solid black;
-    width: max-content;
-    background-color: #0f4c5c;
-    display: ;
-    position: absolute;
-    font-size: 200%;
-    color: white;
-    text-shadow: 2px 2px 4px black;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 80;
-    text-align: center;
+  padding: 3px;
+  border: 2px solid black;
+  width: max-content;
+  background-color: #0f4c5c;
+  position: absolute;
+  font-size: 200%;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 80px;
+  text-align: center;
 }
 #current-events-list {
   text-align: center;
@@ -279,7 +277,7 @@ footer {
 }
 
 .eventCard {
-  font-family: Croissant+One;
+  font-family: Croissant One, Arial, Helvetica, sans-serif;
   background-color: #0f4c5c;
   border-radius: 25px;
   padding: 10px 50px 20px 50px;
@@ -387,6 +385,7 @@ form input.submitBtn:hover {
 }
 .memberBenefits {
   grid-column: 2/4;
+  grid-row: 1/4;
   text-align: center;
 }
 #timeStamp {
@@ -494,9 +493,6 @@ form input.submitBtn:hover {
   box-shadow: 4px 2px 5px grey;
   background-color: rgb(189, 231, 248);
   margin: 5px 0px 5px 0px;
-}
-#benefits {
-  align-items: center;
 }
 
 #benefits li {

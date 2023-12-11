@@ -41,16 +41,17 @@
     </nav>
     <main>
        <form id="form" method="get" action="thankyou.html">
-        <legend>Join Our Community!</legend>
+        
         <fieldset>
-            <label class="top">First Name*<input type="name" id="fname" placeholder="First Name" required></label>
-            <label class="top">Last Name*<input type="name" id="lname" placeholder="Last Name" required></label>
-            <label class="top">Position Title*<input type="text" id="title" placeholder="title" required></label>
+            <legend>Join Our Community!</legend>
+            <label class="top">First Name*<input type="text" id="fname" placeholder="First Name" required></label>
+            <label class="top">Last Name*<input type="text" id="lname" placeholder="Last Name" required></label>
+            <label class="top">Position Title*<input type="text" id="postitle" placeholder="title" required></label>
             <label class="top">Email*<input type="email" id="email" name="username" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="Please enter a valid Email Address" required></label>
-            <label class="top">Phone Number*<input type="number" id="number" placeholder="(+44 0012345678)" required></label>
+            <label class="top">Phone Number*<input type="tel" id="number" placeholder="(+44 0012345678)" required></label>
             <label class="top">Business or Organization<input type="text" id="business" placeholder="Business"></label>
             <label class="top">Position Title<input type="text" id="title" placeholder="title"></label>
-            <label class="top">Business Description<input type="textarea" id="description" placeholder="Business Description"></label>
+            <label class="top">Business Description<input type="text" id="description" placeholder="Business Description"></label>
         </fieldset>
         <fieldset>
             <legend>Membership Level</legend>
@@ -59,13 +60,13 @@
             <label class="mid"><input type="radio" name="Membership" value="Bronze">  Bronze</label>
             <label class="mid"><input type="radio" name="Membership" value="Silver">  Silver</label>
             <label class="mid"><input type="radio" name="Membership" value="Gold">  Gold</label>
-            <label>TimeStamp</label>
+            
             
         </fieldset>  
         
         <input type="submit" class="submitBtn" value="Join Our Community!">  
         </form>
-        <div type="hidden" id="timeStamp" name="timeStamp"></div>
+        
         <div class="memberBenefits">
             <h3>Membership Benefits</h3>
             <ul id="benefits">
@@ -80,7 +81,7 @@
         <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
         <p id="last-modified"></p>
     </footer>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/script.js"></script> -->
+    <!-- <script src="scripts/windchill.js"></script> -->
 </body>
 </html>
