@@ -45,35 +45,41 @@
 
     <main>
         <div class="maincard">
+            <div class="action" >
+                <a href="reservations.html" id="bookstatement"><h3 >Book Today!</h3></a> 
+            </div>
+            <div class="action" >    
+                <a href="contact.html" id="contactus"><h3>Call Us with Questions!</h3></a>
+            </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
-                    <img src="images/Cozumel_Beach.webp" style="width:100%">
-                    <div class="text">Caption Text</div>
+                    <img src="images/scooters in Cozumel.webp" style="width:100%">
+                    <div class="text">Cozumel Beach</div>
                 </div>
                 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 5</div>
-                    <img src="images/cozumelmap.webp" style="width:100%">
-                    <div class="text">Caption Two</div>
+                    <img src="images/ScooterShop.webp" style="width:100%">
+                    <div class="text">Map of Cozumel</div>
                 </div>
                 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 5</div>
                     <img src="images/Jeep Cozumel.webp" style="width:100%">
-                    <div class="text">Caption Three</div>
+                    <div class="text">Rent a Jeep!</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
-                    <img src="images/scooters in Cozumel.webp" style="width:100%">
-                    <div class="text">Caption Four</div>
+                    <img src="images/Cozumel_Beach.webp" style="width:100%">
+                    <div class="text">Scooters along the coast</div>
                 </div>
                 
                 <div class="mySlides fade">
                     <div class="numbertext">5 / 5</div>
                     <img src="images/Scooter on beach.webp" style="width:100%">
-                    <div class="text">Caption Five</div>
+                    <div class="text">Quick and easy trasnport!</div>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -90,6 +96,21 @@
                 </div>
                 
             </div>
+            <div class="card" id="weather-container">
+                <div class="weather" id="day1">
+                    <h2>Cozumel Forecast</h2>
+                    <p id="temperature"></p>
+                    <p id="humidity"></p>
+                    <img id="weather-icon" src="#" alt="#">
+                    <p id="description"></p>
+                    <section>
+                        <p id="dayOne"></p>
+                        <p id="dayTwo"></p>
+                        <p id="dayThree"></p>
+                    </section>
+                </div>
+            </div>
+            
         </div>
         
         <div id="sidebar-main">
@@ -140,26 +161,17 @@
             </ul>
             
         </div>
-        <div>
-            <h4>Find our Locations!</h4>
-        </div>
-        <div class="card" id="weather-container">
-            <div id="">
-                <h2>Cozumel Forecast</h2>
-                <p id="temperature"></p>
-                <img id="weather-icon" src="#" alt="#">
-                <p id="description"></p>
-                <section>
-                    <p id="dayOne"></p>
-                    <p id="dayTwo"></p>
-                    <p id="dayThree"></p>
-                </section>
-            </div>
-        </div>
         
        
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
+        <div id="social">
+            <a href="facebook.com"><img src="images/facebook.png"></a>
+            <a href="twitter.com"><img src="images/twitter.png"></a>
+            <a href="instagram.com"><img src="images/instagram.png"></a>
+        </div>
+    </footer>
     <script src="scripts/slideShow.js" defer></script>
     <script src="scripts/weather.js"></script>
 </body>

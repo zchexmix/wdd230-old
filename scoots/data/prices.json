@@ -1,0 +1,154 @@
+{
+    "Vehicle": [
+        {
+            "Name": "Honda Metro Scooter",
+            "persons": "1",
+            "reservations" : [
+                {
+                    "reservation" : [
+                        {
+                        
+                            "halfday" : "$20",
+                            "fullday" : "$30"
+                        
+                        }
+                    ]
+                },
+                
+                {
+                    "walk-in" : [
+                        {
+                            "halfday" : "$25",
+                            "fullday" : "$35"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Honda Dio Scooter",
+            "persons": "2",
+            "reservations" : [
+                {
+                    "reservation" : [
+                        {
+                        
+                            "halfday" : "$30",
+                            "fullday" : "$40"
+                        
+                        }
+                    ]
+                },
+                
+                {
+                    "walk-in" : [
+                        {
+                            "halfday" : "$35",
+                            "fullday" : "$45"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Honda PX150 Scooter",
+            "persons": "2",
+            "reservations" : [
+                {
+                    "reservation" : [
+                        {
+                        
+                            "halfday" : "$40",
+                            "fullday" : "$50"
+                        
+                        }
+                    ]
+                },
+                
+                {
+                    "walk-in" : [
+                        {
+                            "halfday" : "$45",
+                            "fullday" : "$55"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Honda Pioneer ATV",
+            "persons": "4",
+            "reservations" : [
+                {
+                    "reservation" : [
+                        {
+                        
+                            "halfday" : "$50",
+                            "fullday" : "$70"
+                        
+                        }
+                    ]
+                },
+                
+                {
+                    "walk-in" : [
+                        {
+                            "halfday" : "$60",
+                            "fullday" : "$80"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Jeep Wrangler - 4 door with a/c",
+            "persons": "5",
+            "reservations" : [
+                {
+                    "reservation" : [
+                        {
+                        
+                            "halfday" : "$70",
+                            "fullday" : "$100"
+                        
+                        }
+                    ]
+                },
+                
+                {
+                    "walk-in" : [
+                        {
+                            "halfday" : "$85",
+                            "fullday" : "$125"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Jeep Wrangler - 2 door",
+            "persons": "4",
+            "reservations" : [
+                {
+                    "reservation" : [
+                        {
+                        
+                            "halfday" : "$60",
+                            "fullday" : "$85"
+                        
+                        }
+                    ]
+                },
+                
+                {
+                    "walk-in" : [
+                        {
+                            "halfday" : "$70",
+                            "fullday" : "$90"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

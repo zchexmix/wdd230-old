@@ -1,4 +1,5 @@
 const currentTemp = document.querySelector("#temperature");
+const humidity = document.querySelector("#humidity");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#description");
 const dayOne = document.querySelector("#dayOne");
@@ -40,6 +41,8 @@ apiFetch();
 function displayResults(data, data2) {
     const tempFahrenheit = (data.main.temp);
     currentTemp.innerHTML = `Current Temp: ${tempFahrenheit} &deg;F`;
+    // let humidity = data.main.humidity;
+    humidity.innerHTML = `Humidity: ${data.main.humidity}`;
     const iconSrc = `https://openweathermap.org/img/w/04n.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src' , `${iconSrc}`);
