@@ -6,6 +6,31 @@ body {
     font-family: Dosis, 'Arial', sans-serif;
     max-width: 1200px;
     margin: auto;
+    background-color: lightgray;
+}
+#message-container {
+    background-color: #ffd700; /* Yellow background, adjust as needed */
+    color: #333; /* Text color, adjust as needed */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+#closeable-message {
+    display: inline-block;
+    margin: 0;
+}
+
+#close-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333; /* Close button color, adjust as needed */
 }
 
 header {
@@ -19,6 +44,7 @@ footer {
     padding: 10px;
     color: #fff;
 }
+
 #social a img {
     display: inline-block;
     margin: auto;
@@ -34,7 +60,7 @@ footer {
 }
 .menu ul {
     list-style: none;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
 }
 .menu ul li {
@@ -68,7 +94,15 @@ footer {
 .menu li {
     margin: 0 15px;
 }
-
+.menu::before {
+	content: "☰";
+    font-size: 2.5rem;
+	color: #fff;
+    margin: 5px;
+}
+.menu.open::before {
+	content: "🎄";
+}
 .menu a {
     color: white;
     text-decoration: none;
@@ -76,49 +110,43 @@ footer {
     transition: color 0.3s ease;
 }
 
-.menu a:hover {
-    color: rgb(6, 108, 4);
-}
 
-.burger-menu {
+
+
+.navbar li {
     display: none;
-    font-size: 24px;
-    cursor: pointer;
+}
+.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+.navlist {
+	list-style-type: none;
+}
+.navbar a:hover {
+    color: #137300;
+}
+.menu.open {
+    
+}
+.open ul {
+    flex-direction: column;
+}
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
 }
 
-@media only screen and (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        z-index: 1;
-    }
 
-    .menu.open {
-        display: block;
-        flex-direction: column;
-        max-width: 300px;
-        
-        
-    }
 
-    .menu a {
-        padding: 15px;
-        display: block;
-        text-align: center;
-        border-bottom: 1px solid #666;
-        max-width: 300px;
-        
-    }
 
-    .burger-menu {
-        display: block;
-    }
-}
+
 
 
 
@@ -128,8 +156,8 @@ footer {
 /* --------- MAIN -------- */
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* max-width: 900px; */
+    grid-template-columns: 100%;
+    background-color: lightgrey;
 }
 .navbar {
     font-family: Dosis, Arial, Helvetica, sans-serif;
@@ -137,7 +165,7 @@ main {
 #top {
     background-color: rgb(21, 108, 4);
     text-align: center;
-    font-size: 26;
+    font-size: 20px;
     font-family: Dosis, Arial, Helvetica, sans-serif;
     box-shadow: 0 0 20px 0 rgba(0, 139, 0, 0.886);
     padding: 10px 0px 10px 0px;
@@ -146,23 +174,20 @@ header div h4 {
     margin: 0 20px;
 }
 .maincard {
-    grid-column: 1/2;
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    background-color: #fff;
+    text-align: center;
     padding: 0 0 15px 0;
 }
 .card {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background-color: skyblue;
+    grid-column: 1/2;
+    background-color: rgb(168, 171, 172);
     border-radius: 10%;
-    box-shadow: #fff;
-    margin: auto;
+    margin: 15px;
+    
 }
 .weather {
     text-align: center;
-    margin: 15px;
+    margin: 0px;
+    padding: 20px;
 }
 #day1 {
     grid-column: 1/2;
@@ -185,7 +210,9 @@ header div h4 {
     
 }
 .action {
-    margin: 10px auto;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 2% 5px 2%;
     background-color: #a7a7a7;
     border-radius: 70px;
     width: 200px;
@@ -219,7 +246,7 @@ header div h4 {
 
 
 
-/* Next & previous buttons */
+/* -----------------------        Next & previous buttons        ------------------------- */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -233,6 +260,9 @@ header div h4 {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+.prev {
+    left: 0;
 }
 
 /* Position the "next button" to the right */
@@ -263,7 +293,6 @@ header div h4 {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 300;
 }
 
 /* The dots/bullets/indicators */
@@ -297,7 +326,7 @@ header div h4 {
 
 
 
-/* ------- Side Bar Main ------- */
+/* --------------------------         Side Bar Main       ------------------------- */
 
 #sidebar-main {
     grid-column: 1/3;
@@ -309,8 +338,8 @@ header div h4 {
     font-size: 32px;
     background-color: rgba(0, 121, 20, 0.912);
     color: #fff;
-    padding: 20px;
-    margin: -10px 0px -5px 0px;
+    padding: 10px;
+    margin: 0px 0px -5px 0px;
 }
 #scrolling-list-main {
     text-align: center;
@@ -318,13 +347,13 @@ header div h4 {
     overflow: auto;
     white-space: nowrap;
     background-color: #333;
-    height: 250px;
+    height: 100%;
 }
 #scrolling-list-main li {
     width: 200px;
-    height: 120px;
-    display: inline-block;
-    margin: 5px 15px;
+    height: 100px;
+    display: block;
+    margin: 150px 15px;
     text-decoration: none;
     padding: 0px 10px;
 
@@ -333,9 +362,8 @@ header div h4 {
     background-color: rgb(187, 236, 255);
     border: rgba(0, 121, 20, 0.912) 3px solid;
     border-radius: 15px;
-    box-shadow: 5px #ebebeb;
+    box-shadow: 5px 2px #ebebeb;
     height: 200px;
-    /* text-align: left; */
 }
 .profDiv-main:hover {
     background-color: rgb(255, 255, 255);
@@ -346,7 +374,6 @@ header div h4 {
     height: 100px;
     margin: 5px;
     border: 1px solid white;
-    box-shadow: 3px #fff;
 }
 .profDiv-main p {
     font-size: 18px;
@@ -357,7 +384,7 @@ header div h4 {
     margin-left: -20px;
 }
 
-/* ------ Side Bar Styling------*/
+/* ------------------------          Side Bar Styling       -----------------------*/
 #sidebar {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -389,7 +416,6 @@ div.profDiv img {
     padding: 15px 0;
     border: rgba(0, 121, 20, 0.912) 3px solid;
     border-radius: 15px;
-    box-shadow: 5px #ebebeb;
 }
 .profDiv:hover {
     background-color: rgb(255, 255, 255);
@@ -400,23 +426,21 @@ div.profDiv img {
 }
 
 
-/* ------Weather Card-------- */
+/* -------------------------     Table Styling        ----------------------- */
 
 
 
 
-/* ----------- Form Styling -------------- */
+/* -------------------------     Form Styling         -------- -------------- */
 :root {
-    :root {
-        --back: hsla(150, 50%, 30%, 1);
-      --back2: hsla(150, 50%, 30%, .5);
-      --foredark: hsla(0,0%,10%,1);
-        --forelight: hsla(0,0%,100%,1);
-        --border: hsla(0, 42%, 48%, 0.8);
-        --borderlight: hsla(0,0%,33%,.3);
-        --shadow: hsl(0,0%,50%);
-        --zebra: hsla(0, 1%, 68%, 0.985);
-    }
+    --back: hsla(150, 50%, 30%, 1);
+    --back2: hsla(150, 50%, 30%, .5);
+    --foredark: hsla(0,0%,10%,1);
+    --forelight: hsla(0,0%,100%,1);
+    --border: hsla(0, 42%, 48%, 0.8);
+    --borderlight: hsla(0,0%,33%,.3);
+    --shadow: hsl(0,0%,50%);
+    --zebra: hsla(0, 1%, 68%, 0.985);
 }
 main div#form {
 	border: thin solid var(--border);
@@ -440,7 +464,7 @@ form legend {
 form label.input {
     display: block;
     font-family: Dosis, Arial, Helvetica, sans-serif;
-    padding-top: .5rem 2%;
+    padding-top: .5rem;
     color: #9c2c13;
     font-size: 1rem;
 }
@@ -481,7 +505,118 @@ form input.submitBtn {
     min-width: 100px;
     max-width: 20rem;
 }
+/* ------------------------          Side Bar Styling       -----------------------*/
+#price-table {
+    grid-column: 1/3;
+    text-align: center;
+    
+    padding: 15px;
+    
+}
+table {
+    width: 100%;
+    margin: auto;
+    border: 1px solid;
+    padding: 5px;
+}
+tr th {
+    background-color: #666;
+    color: #fff;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* ----------------------         Form Style         -------------------------- */
+#reservations-home {
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+#thanksDiv {
+    padding: 5% 2% 20% 2%;
+    text-align: center;
+    display: block;
+}
 
+#form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+#updateForm {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    grid-column: span 2;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.input {
+    display: block;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #555;
+    text-align: left;
+}
+
+.input span {
+    display: inline-block;
+    width: 120px; /* Adjust the width as needed */
+    margin-bottom: 5px;
+    color: #555;
+    text-align: left;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.submitBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    grid-column: span 2;
+}
+
+.submitBtn:hover {
+    background-color: #45a049;
+}
 
 /* ----------- Record HTML Submission ----------- */
 
@@ -495,4 +630,90 @@ form input.submitBtn {
     margin: auto;
     padding: 2rem 0;
 
+}
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+}
+.weather h2 {
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 28px;
+}
+.weather img {
+    margin: auto;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+#today-forecast {
+    grid-column: 2/3;
+}
+#feels-like {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#tomorrow3p {
+    grid-column: 1/3;
+}
+#temperature {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#humidity {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#description {
+    grid-column: 1/3;
+}
+#contact-info {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#contact-info h3 {
+    grid-column: 1/3;
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+
+}
+#locationone {
+    grid-column: 1/2;
+    text-align: center;
+}
+#locationtwo {
+    grid-column: 2/3;
+    text-align: center;
+}
+#map {
+    width: 100%;
+}
+#map h4 {
+    font-size: 28px;
+    text-align: center;
+}
+#extra-info {
+   background-color: #333; 
+    grid-column: 1/3;
+    text-align: center;
+}
+#extra-info h2 {
+    margin: 2% 35% 0% 35%;
+    background-color: #137300;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 40px;
+    padding: 10px;
+}
+#extra-info li {
+    font-size: 18px;
+    list-style: none;
+    color: #fff;
+    margin: 10px;
+}
+#extra-info li:hover {
+    color: #137300;
 }

@@ -8,15 +8,19 @@
     <meta name="description" content="This is the main home page for Scoots Motor Rentals. Here you will be able to find all you need for renting scooters, ATVs, and Jeeps!">
     <meta property="og:title" content="Scoots Motor Rentals - Home Page">
     <meta property="og:type" content="Website">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://yourfriendthenomad.com/wp-content/uploads/2023/03/Cozumel-Mexico-2-1024x732.jpg">
     <meta property="og:url" content="https://zchexmix.github.io/wdd230/scoots/index.html">
-    <link rel="icon" href="faviconchamber.ico">
+    <link rel="icon" href="scootericon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/smaller.css">
     <link rel="stylesheet" href="styles/bass.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
+    <div id="message-container">
+        <p id="closeable-message"></p>
+        <button id="close-button">&times;</button>
+    </div>
     <header>
         <div id="top">
             <div id="top-background"></div>
@@ -27,8 +31,9 @@
             </div>
         </div>
         <nav class="navbar">
-            <a href="index.html"><img id="logoimg"  src="Images/friendslogo.jpeg"></a>
+            
             <div class="menu">
+                <!-- <button id="menu"></button> -->
                 <ul class="navList" >
                     <li><a href="index.html">Home</a></li>
                     <li><a href="rentals.html">Rentals and Pricing</a></li>
@@ -38,51 +43,50 @@
                 </ul>
                 
             </div>
-            <button class="burger-menu">&#9776;</button>
         </nav>
         
     </header>
 
     <main>
         <div class="maincard">
-            <div class="action" >
+            <div class="action">
                 <a href="reservations.html" id="bookstatement"><h3 >Book Today!</h3></a> 
             </div>
-            <div class="action" >    
+            <div class="action">    
                 <a href="contact.html" id="contactus"><h3>Call Us with Questions!</h3></a>
             </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
-                    <img src="images/scooters in Cozumel.webp" style="width:100%">
+                    <img src="images/scooters_in_Cozumel.webp" alt="scooters in cozumel" style="width:100%" loading="lazy">
                     <div class="text">Cozumel Beach</div>
                 </div>
                 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 5</div>
-                    <img src="images/ScooterShop.webp" style="width:100%">
+                    <img src="images/ScooterShop.webp" alt="scooter shop" style="width:100%" loading="lazy">
                     <div class="text">Map of Cozumel</div>
                 </div>
                 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 5</div>
-                    <img src="images/Jeep Cozumel.webp" style="width:100%">
+                    <img src="images/Jeep_Cozumel.webp" alt="Jeep in cozumel" style="width:100%" loading="lazy">
                     <div class="text">Rent a Jeep!</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
-                    <img src="images/Cozumel_Beach.webp" style="width:100%">
+                    <img src="images/Cozumel_Beach.webp" alt="cozumel beach" style="width:100%" loading="lazy">
                     <div class="text">Scooters along the coast</div>
                 </div>
                 
                 <div class="mySlides fade">
                     <div class="numbertext">5 / 5</div>
-                    <img src="images/Scooter on beach.webp" style="width:100%">
+                    <img src="images/Scooter_on_beach.webp" alt="scooters in cozumel" style="width:100%" loading="lazy">
                     <div class="text">Quick and easy trasnport!</div>
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 <br>
 
@@ -98,62 +102,59 @@
             </div>
             <div class="card" id="weather-container">
                 <div class="weather" id="day1">
-                    <h2>Cozumel Forecast</h2>
+                    <h2>Cozumel Weather ⚡️</h2>
                     <p id="temperature"></p>
                     <p id="humidity"></p>
                     <img id="weather-icon" src="#" alt="#">
                     <p id="description"></p>
-                    <section>
-                        <p id="dayOne"></p>
-                        <p id="dayTwo"></p>
-                        <p id="dayThree"></p>
-                    </section>
+                    <p id="today-forecast"></p>
+                    <p id="feels-like"></p>
+                    <p id="tomorrow3p"></p>
                 </div>
             </div>
             
-        </div>
         
         <div id="sidebar-main">
             <h4>Heres a quick look at our stock! ⬇️</h4>
             <ul id="scrolling-list-main">
                 <li>
                     <div class="profDiv-main">
-                        <a href="rentals.html"><img class="sidepic" src="images/Honda_Metropolitan_scooter.webp"></a>
+                        <a href="rentals.html"><img class="sidepic" src="images/Honda_Metropolitan_scooter.webp" alt="Honda Metro" loading="lazy"></a>
                         <p>Honda Metropolitan</p>
                         <p class="prices-main">Price starting at: $20/day</p>
                     </div>
                 </li>
                 <li>
                     <div class="profDiv-main">
-                        <a href="rentals.html"><img class="sidepic" src="images/dio.webp"></a>
+                        <a href="rentals.html"><img class="sidepic" src="images/dio.webp" alt="Honda Dio" loading="lazy"></a>
                         <p>Honda Dio</p>
                         <p class="prices-main">Price starting at: $30/day</p>
                     </div>
                 </li>
                 <li>
                     <div class="profDiv-main">
-                        <a href="rentals.html"><img class="sidepic" src="images/Honda PCX150.webp"></a>
+                        <a href="rentals.html"><img class="sidepic" src="images/Honda_PCX150.webp" alt="PCX150" loading="lazy"></a>
                         <p>Honda PCX150</p>
                         <p class="prices-main">Price starting at: $40/day</p>
                     </div>
                 </li>
                 <li>
                     <div class="profDiv-main">
-                        <a href="rentals.html"><img class="sidepic" src="images/Honda ATV.webp"></a>
+                        <a href="rentals.html"><img class="sidepic" src="images/Honda_ATV.webp" alt="ATV" loading="lazy"></a>
                         <p>Honda Pioneer 1000</p>
                         <p class="prices-main">Price starting at: $50/day</p>
                     </div>
                 </li>
                 <li>
                     <div class="profDiv-main">
-                        <a href="rentals.html"><img class="sidepic" src="images/Jeep 4D.webp"></a>
+                        <a href="rentals.html"><img class="sidepic" src="images/Jeep_4D.webp" alt="Jeep 4D" loading="lazy"></a>
                         <p>Jeep Wrangler - 4D</p>
                         <p class="prices-main">Price starting at: $70/day</p>
                     </div>
                 </li>
                 <li>
                     <div class="profDiv-main">
-                        <a href="rentals.html"><img class="sidepic" src="images/Jeep 2D.webp"></a>
+                        <a href="rentals.html"><img class="sidepic" src="images/Jeep_2D.webp" alt="Jeep2D" loading="lazy"></a>
                         <p>Jeep Wrangler - 2D</p>
                         <p class="prices-main">Price starting at: $60/day</p>
                     </div>
@@ -167,13 +168,15 @@
     <footer>
         <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
         <div id="social">
-            <a href="facebook.com"><img src="images/facebook.png"></a>
-            <a href="twitter.com"><img src="images/twitter.png"></a>
-            <a href="instagram.com"><img src="images/instagram.png"></a>
+            <a href="facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
     </footer>
     <script src="scripts/slideShow.js" defer></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/tempbutton.js"></script>
 </body>
 
 </html>

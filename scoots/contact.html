@@ -1,18 +1,92 @@
-<div id="form">
-    <form id="updateForm" action="thankyou.html" method="get">
-        <fieldset>
-            <legend>Submit Your Update!</legend>
-            <label class="input">First Name*<input type="name" id="fname" placeholder="First Name" required></label>
-            <label class="input">Last Name*<input type="name" id="lname" placeholder="Last Name" required></label>
-            <label class="input">Email*<input type="email" id="email" placeholder="Step-friend@Hooligan.com" required></label>
-            <label class="input">Update*
-                <textarea type="update" id="update" name="update" rows="15" cols="70" placeholder="Enter your update here..." ></textarea>
-            </label>
-        </fieldset>
-        <input type="submit" class="submitBtn" value="Participate In Friendship!">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Motor Rentals</title>
+    <meta name="author" content="Zachary Checketts">
+    <meta name="description" content="This is the contact page for Scoots Motor Rentals. If you wnat more information on any of our vehicles or have questions about anything this is where you can get more information!">
+    <meta property="og:title" content="Scoots Motor Rentals - Contact Page">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="https://yourfriendthenomad.com/wp-content/uploads/2023/03/Cozumel-Mexico-2-1024x732.jpg">
+    <meta property="og:url" content="https://zchexmix.github.io/wdd230/scoots/contact.html">
+    <link rel="icon" href="scootericon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/bass.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            
+            <div class="menu">
+                <ul class="navList" >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals and Pricing</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
 
-    </form>
-</div>
-<div>
-    <h4>Find our Locations!</h4>
-</div>
+                </ul>
+                
+            </div>
+        </nav>
+        <div id="top">
+            <div id="top-background"></div>
+            <div id="top-msg">
+                <h1 class="top-title">Contact Us!</h1>
+                <h4 class="title-description">Lets make this the best time you've ever had in Cozumel!</h4>
+                <!-- <a href="reservations.html"><p>Make your reservation!</p></a> -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <div id="form">
+            <form id="updateForm" action="thankyoucontact.html" method="get">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label class="input">First Name*<input type="text" id="fname" placeholder="First Name" required></label>
+                    <label class="input">Last Name*<input type="text" id="lname" placeholder="Last Name" required></label>
+                    <label class="input">Email*<input type="email" id="email" placeholder="Step-friend@Hooligan.com" required></label>
+                </fieldset>
+                <input type="submit" class="submitBtn" value="Request more Information!">
+        
+            </form>
+        </div>
+        <div id="map">
+            <h4>Find our Locations!</h4>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1NBf9dEcfe2-ZHD1wWXiEhr9L3M3f_Gc&ehbc=2E312F&noprof=1" width="440" height="380"></iframe>
+
+        </div>
+        <div id="contact-info">
+            <h3>Feel free to reach out!</h3>
+            <div id="locationone">
+                <p><strong>Puerta Maya Location</strong></p>
+                <p>Phone: 555-1029-1234</p>
+                <p>www.Scootsrentals.com</p>
+                <p>Address: Av. Rafael E. Melgar 1a, 77675 Cozumel, Q.R., Mexico</p>
+            </div>
+            <div id="locationtwo">
+                <p>Playa Del Carmen Location</p>
+                <p>Phone: 555-1029-1234</p>
+                <p>www.Scootsrentals.com</p>
+                <p>Address: Av. Rafael E. Melgar Esq, Av Lic Benito Juárez s/n, Centro, 77600 Cozumel, Q.R., Mexico</p>
+            </div>
+        </div>
+       
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear">2023</span> Zach Checketts | London, England | WDD230 - BYU-Idaho</p>
+        <div id="social">
+            <a href="facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

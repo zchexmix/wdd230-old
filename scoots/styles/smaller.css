@@ -1,0 +1,13 @@
+@media only screen and (max-width: 480px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    
+  
+    /* Adjust grid settings as needed */
+    /* For example, you can specify grid-template-rows and grid-template-columns */
+  
+    /* Optional: Apply specific styling for elements within the grid at 480px or less */
+    /* For example, you might want to set specific font sizes, padding, etc. */
+  }

@@ -2,14 +2,15 @@ const currentTemp = document.querySelector("#temperature");
 const humidity = document.querySelector("#humidity");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#description");
-const dayOne = document.querySelector("#dayOne");
-const dayTwo = document.querySelector("#dayTwo");
-const dayThree = document.querySelector("#dayThree");
+const dayOne = document.querySelector("#today-forecast");
+const dayTwo = document.querySelector("#feels-like");
+const dayThree = document.querySelector("#tomorrow3p");
+const todayHigh = document.querySelector("#closeable-message");
 
 
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=20.423209&lon=-86.910561&appid=3f88f65f0095b43b5bf2ae9d6ffeba38&units=imperial";
 // 20.423209, -86.910561
-const urlDaily = "https://api.openweathermap.org/data/2.5/forecast?lat=40.8896139021846&lon=-111.88235297395136&appid=3f88f65f0095b43b5bf2ae9d6ffeba38&units=imperial";
+const urlDaily = "https://api.openweathermap.org/data/2.5/forecast?lat=20.423209&lon=-86.910561&appid=3f88f65f0095b43b5bf2ae9d6ffeba38&units=imperial";
 
 async function apiFetch() {
     try {
@@ -40,18 +41,18 @@ apiFetch();
 
 function displayResults(data, data2) {
     const tempFahrenheit = (data.main.temp);
-    currentTemp.innerHTML = `Current Temp: ${tempFahrenheit} &deg;F`;
+    currentTemp.innerHTML = `<strong>Current Temp</strong>: ${tempFahrenheit} &deg;F`;
     // let humidity = data.main.humidity;
-    humidity.innerHTML = `Humidity: ${data.main.humidity}`;
+    humidity.innerHTML = `<strong>Humidity</strong>: ${data.main.humidity}%`;
     const iconSrc = `https://openweathermap.org/img/w/04n.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src' , `${iconSrc}`);
     weatherIcon.setAttribute('alt', 'Weather Icon');
-    captionDesc.textContent = `Cozumel Conditions: ${desc}`;
-    dayOne.innerHTML = `Tomorrows Forecast - High: ${data2.list[0].main.temp_max}, Low: ${data2.list[0].main.temp_min} Condition: ${data2.list[0].weather[0].description}`;
-    dayTwo.innerHTML = `In 2 Days - High: ${data2.list[1].main.temp_max}, Low: ${data2.list[1].main.temp_min} Condition: ${data2.list[1].weather[0].description}`;
-    dayThree.innerHTML= `In 3 Days - High: ${data2.list[2].main.temp_max}, Low: ${data2.list[2].main.temp_min} Condition: ${data2.list[2].weather[0].description}`;
-
+    captionDesc.textContent = `Cozumel Current Conditions: ${desc}`;
+    todayHigh.innerHTML = `Today's high temperature: ${data.main.temp_max} &deg; - Stay Cool!`;
+    dayTwo.innerHTML = `Feels like:  ${data.main.feels_like}&deg;`;
+    dayThree.innerHTML= `Tomorrows Forecast @ 3pm: ${data2.list[5].main.temp}&deg;`;
+    dayOne.innerHTML = `<strong>Todays</strong> Forecast - High: ${data.main.temp_max}&deg;, Low: ${data.main.temp_min}&deg;`;
 }
 
 
